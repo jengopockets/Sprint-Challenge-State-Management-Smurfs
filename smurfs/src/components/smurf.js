@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {deleteSmurf} from "../actions";
+import {deleteSmurf} from "../store/actions";
 const Smurf = props => {
     return <div key={props.smurf.id}>
     <h1>{props.smurf.name}</h1>

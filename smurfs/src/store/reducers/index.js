@@ -20,6 +20,8 @@ export const reducer =(state = initialState, action) => {
             return{...state, smurfs:action.payload, fetching:false};
         case FETCH_FAILURE:
             return{...state, error:action.payload, fetching:false};
+        default: 
+        return state
 
     }
 }
